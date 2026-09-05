@@ -1,73 +1,194 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 520" fill="none">
   <defs>
-    <linearGradient id="swooshGrad" x1="5" y1="85" x2="95" y2="40" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="25%" stop-color="#EC4899"/>
-      <stop offset="50%" stop-color="#F97316"/>
-      <stop offset="75%" stop-color="#FBBF24"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
+    <!-- Right Pillar Gradient (Magenta -> Red-Orange -> Golden Amber) -->
+    <linearGradient id="hRightPillarGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D9006C" />
+      <stop offset="45%" stop-color="#FF3B00" />
+      <stop offset="100%" stop-color="#FFA000" />
     </linearGradient>
-    <linearGradient id="hGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#EC4899"/>
+
+    <!-- Sweeping Paint Swoosh Multi-Color Gradient (Purple -> Pink -> Orange -> Amber -> Cyan) -->
+    <linearGradient id="swooshSweepGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#581C87" />
+      <stop offset="20%" stop-color="#7C3AED" />
+      <stop offset="40%" stop-color="#E11D48" />
+      <stop offset="65%" stop-color="#EA580C" />
+      <stop offset="85%" stop-color="#F59E0B" />
+      <stop offset="95%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0284C7" />
     </linearGradient>
-    <linearGradient id="uGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FB7185"/>
-      <stop offset="100%" stop-color="#F97316"/>
+
+    <!-- Hub Letter H Gradient -->
+    <linearGradient id="letterHGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#E11D48" />
     </linearGradient>
-    <linearGradient id="bGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
+
+    <!-- Hub Letter U Gradient -->
+    <linearGradient id="letterUGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#F97316" />
     </linearGradient>
-    <linearGradient id="lineLeft" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#EC4899"/>
+
+    <!-- Hub Letter B Gradient -->
+    <linearGradient id="letterBGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#06B6D4" />
     </linearGradient>
-    <linearGradient id="lineRight" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#F97316"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
+
+    <!-- Divider Left Line Gradient -->
+    <linearGradient id="divLeftGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#F97316" />
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+
+    <!-- Divider Right Line Gradient -->
+    <linearGradient id="divRightGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
   </defs>
 
-  <!-- Emblem on the left -->
-  <g transform="translate(10, 10)">
-    <circle cx="50" cy="50" r="46" fill="#0C0C12" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
-    <path d="M62 20 C42 16 20 28 17 50 C14 70 30 84 50 84 C56 84 62 82 66 79" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" fill="none"/>
-    <path d="M36 32 L36 68" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round"/>
-    <path d="M36 50 L56 50" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <path d="M56 32 L56 50" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round"/>
-    <path d="M56 48 C56 64 54 74 68 76 C78 77 86 68 87 56 C88 44 80 34 72 31" stroke="url(#swooshGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-    <path d="M26 74 C36 82 52 83 68 78 C76 75 84 69 88 62" stroke="url(#swooshGrad)" stroke-width="4.5" stroke-linecap="round" opacity="0.85"/>
-    <circle cx="78" cy="27" r="2.8" fill="#06B6D4"/>
-    <circle cx="86" cy="35" r="2.2" fill="#38BDF8"/>
-    <circle cx="91" cy="48" r="1.8" fill="#FBBF24"/>
-    <circle cx="88" cy="68" r="2.2" fill="#F97316"/>
-    <circle cx="73" cy="85" r="2" fill="#EC4899"/>
-    <circle cx="34" cy="84" r="1.6" fill="#8B5CF6"/>
+  <!-- 1. EMBLEM (Scale to 240x240 centered at X: 130, Y: 20) -->
+  <g id="cavora-emblem" transform="translate(130, 20) scale(2.4)">
+    
+    <!-- Outer Crescent 'C' (Deep Black, tapering at top horn and curving to bottom) -->
+    <path
+      d="M 59 25.5 
+         C 46 22, 28 29, 21 44 
+         C 14 57, 19 72, 31 81 
+         C 37 85, 43 86.5, 49 86.5 
+         C 43.5 82, 36.5 79.5, 30.5 72.5 
+         C 24 64.5, 23 52.5, 28 42.5 
+         C 33 32.5, 44 25, 59 25.5 Z"
+      fill="#14151B"
+    />
+
+    <!-- Inner 'H' Monogram Left Pillar (Deep Black with sharp angled top cut) -->
+    <path
+      d="M 37.5 35 
+         L 44.5 31 
+         L 44.5 67 
+         L 37.5 70 Z"
+      fill="#14151B"
+    />
+
+    <!-- Inner 'H' Monogram Crossbar (Deep Black) -->
+    <path
+      d="M 44.5 48 
+         L 57 48 
+         L 57 54.5 
+         L 44.5 54.5 Z"
+      fill="#14151B"
+    />
+
+    <!-- Inner 'H' Monogram Right Pillar (Vibrant Gradient Magenta -> Orange -> Amber) -->
+    <path
+      d="M 57 31 
+         L 64 31 
+         L 64 61.5 
+         L 57 61.5 Z"
+      fill="url(#hRightPillarGrad)"
+    />
+
+    <!-- Dynamic Sweeping Multi-Color Paint Swoosh (Curving around bottom and flaring upwards) -->
+    <path
+      d="M 38 74 
+         C 45 83, 56 86, 67 82 
+         C 75 77, 81 67, 82 54 
+         C 82.5 48, 80 43, 78 45 
+         C 77 47, 75 51, 74 55 
+         C 71 65, 63 71, 53 72.5 
+         C 46 73.5, 41 72, 38 74 Z"
+      fill="url(#swooshSweepGrad)"
+    />
+
+    <!-- Additional Feathered Brush Strands at Tip -->
+    <path
+      d="M 76 44 
+         C 78 42, 81 44, 80 48 
+         C 78 52, 74 58, 69 64 
+         C 72 60, 75 54, 76 44 Z"
+      fill="url(#swooshSweepGrad)"
+    />
+    <path
+      d="M 72 49 
+         C 74 47, 77 49, 76 53 
+         C 74 57, 71 61, 67 66 
+         C 69 62, 71 56, 72 49 Z"
+      fill="url(#swooshSweepGrad)"
+    />
+
+    <!-- Paint Splatter Droplets (Magenta, Orange, Cyan) -->
+    <circle cx="81.5" cy="43" r="2" fill="#E11D48" />
+    <circle cx="83.5" cy="48" r="1.5" fill="#F97316" />
+    <circle cx="79" cy="51.5" r="1.2" fill="#06B6D4" />
   </g>
 
-  <!-- Wordmark Text -->
-  <g transform="translate(130, 25)">
-    <!-- Cavora -->
-    <text x="0" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="38" fill="#FFFFFF" letter-spacing="1">Cavora</text>
+  <!-- 2. TYPOGRAPHY: CAVORA HUB -->
+  <g id="cavora-wordmark" transform="translate(0, 310)">
+    <!-- Cavora in Black -->
+    <text
+      x="170"
+      y="65"
+      font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+      font-weight="900"
+      font-size="64"
+      fill="#14151B"
+      letter-spacing="-0.5"
+      text-anchor="end"
+    >Cavora</text>
+
+    <!-- Hub with Multi-Color Letters -->
+    <g transform="translate(182, 0)">
+      <text
+        x="0"
+        y="65"
+        font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+        font-weight="900"
+        font-size="64"
+        letter-spacing="-0.5"
+      >
+        <tspan fill="url(#letterHGrad)">H</tspan>
+        <tspan fill="url(#letterUGrad)" dx="2">u</tspan>
+        <tspan fill="url(#letterBGrad)" dx="2">b</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- 3. SUBTITLE: — GRAPHICS — -->
+  <g id="graphics-divider" transform="translate(0, 420)">
+    <!-- Left Accent Line -->
+    <line x1="90" y1="0" x2="160" y2="0" stroke="url(#divLeftGrad)" stroke-width="3" stroke-linecap="round" />
     
-    <!-- Hub -->
-    <text x="145" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="38">
-      <tspan fill="url(#hGrad)">H</tspan>
-      <tspan fill="url(#uGrad)">u</tspan>
-      <tspan fill="url(#bGrad)">b</tspan>
+    <!-- GRAPHICS Text (Spaced Out) -->
+    <text
+      x="250"
+      y="6"
+      font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+      font-weight="800"
+      font-size="20"
+      fill="#14151B"
+      letter-spacing="9"
+      text-anchor="middle"
+    >GRAPHICS</text>
+
+    <!-- Right Accent Line -->
+    <line x1="340" y1="0" x2="410" y2="0" stroke="url(#divRightGrad)" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- 4. TAGLINE: Design. Create. Inspire. -->
+  <g id="tagline" transform="translate(250, 475)">
+    <text
+      font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+      font-weight="700"
+      font-size="18"
+      text-anchor="middle"
+      letter-spacing="0.5"
+    >
+      <tspan fill="#14151B">Design.</tspan>
+      <tspan dx="10" fill="#FF4500">Create.</tspan>
+      <tspan dx="10" fill="#0284C7">Inspire.</tspan>
     </text>
-
-    <!-- Subtitle: GRAPHICS -->
-    <line x1="0" y1="52" x2="50" y2="52" stroke="url(#lineLeft)" stroke-width="2" stroke-linecap="round"/>
-    <text x="110" y="56" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#E4E4E7" letter-spacing="6" text-anchor="middle">GRAPHICS</text>
-    <line x1="170" y1="52" x2="220" y2="52" stroke="url(#lineRight)" stroke-width="2" stroke-linecap="round"/>
-
-    <!-- Tagline -->
-    <text x="110" y="76" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="500" font-size="12" fill="#22D3EE" letter-spacing="0.5" text-anchor="middle">Design. Create. Inspire.</text>
   </g>
 </svg>

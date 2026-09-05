@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles, Video, Palette, Flame } from 'lucide-react';
 import { RetroStar8, RetroStar4, CreativePurposeBadge } from './RetroIcons';
+import { CavoraLogo } from '../CavoraLogo';
 
 interface SolarHeroProps {
   onViewWork: () => void;
@@ -176,56 +177,20 @@ export const SolarHero: React.FC<SolarHeroProps> = ({ onViewWork, onOpenInquiry 
                   </motion.div>
                 </div>
 
-                {/* Center Core: Custom Cavora Hub Medallion & Creative Design Elements */}
-                <div className="relative z-10 flex flex-col items-center my-auto">
-                  {/* Central Branded Medallion with interactive hover pulse */}
+                {/* Center Core: Official Cavora Hub Logo Showcase */}
+                <div className="relative z-10 flex flex-col items-center my-auto px-2">
                   <motion.div
-                    whileHover={{ scale: 1.08, rotate: 5 }}
-                    className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-tr from-[#FF5533] to-[#FF3E6C] flex items-center justify-center shadow-xl shadow-[#FF5533]/30 border-4 border-white cursor-pointer group"
+                    whileHover={{ scale: 1.04, y: -2 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                    className="p-5 sm:p-6 rounded-3xl bg-white/95 backdrop-blur-sm border border-[#F0E2D8] shadow-xl shadow-[#FF5533]/15 flex flex-col items-center cursor-default"
                   >
-                    
-                    {/* Retro Sunburst in background */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <RetroStar8 className="w-20 h-20 opacity-25 text-white animate-spin-slow" />
-                    </div>
-
-                    {/* Bold Studio Mark */}
-                    <div className="relative text-center text-white">
-                      <span className="font-display font-black text-4xl sm:text-5xl tracking-tighter leading-none block group-hover:scale-110 transition-transform">
-                        C
-                      </span>
-                      <span className="font-mono text-[9px] uppercase tracking-widest block font-bold text-white/90 -mt-1">
-                        HUB
-                      </span>
-                    </div>
-
-                    {/* Floating corner micro-badges with counter animation */}
-                    <motion.div
-                      animate={{ y: [-3, 3, -3] }}
-                      transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                      className="absolute -top-1 -right-1 w-7 h-7 rounded-full bg-white text-[#FF5533] flex items-center justify-center shadow-md border border-[#F0E2D8]"
-                    >
-                      <Video className="w-3.5 h-3.5" />
-                    </motion.div>
-
-                    <motion.div
-                      animate={{ y: [3, -3, 3] }}
-                      transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
-                      className="absolute -bottom-1 -left-1 w-7 h-7 rounded-full bg-white text-[#FF3E6C] flex items-center justify-center shadow-md border border-[#F0E2D8]"
-                    >
-                      <Palette className="w-3.5 h-3.5" />
-                    </motion.div>
+                    <CavoraLogo
+                      variant="stacked"
+                      size="md"
+                      theme="light"
+                      showTagline={true}
+                    />
                   </motion.div>
-
-                  {/* Creative Tags */}
-                  <div className="mt-4 text-center">
-                    <p className="font-display font-black text-sm text-[#1C1618] uppercase tracking-wide">
-                      VISUAL CREATIVE SUITE
-                    </p>
-                    <p className="text-[11px] font-mono text-[#7D6E6F] mt-0.5">
-                      4K Video • Retouching • Branding
-                    </p>
-                  </div>
 
                   {/* Animated Audio/Video Waveform bar */}
                   <div className="mt-3 flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/90 border border-[#E8D8CC] shadow-2xs">
