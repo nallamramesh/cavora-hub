@@ -1,0 +1,6 @@
+{
+  "name": "Cavora Hub Graphics",
+  "description": "Cavora Hub Graphics - Creative post-production studio crafting cinematic video edits, high-end photo retouching, and bold brand identities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
